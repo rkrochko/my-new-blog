@@ -1,0 +1,113 @@
+/* =======================================================================
+Shell
+========================================================================== */
+#content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  margin-top: 150px;
+}
+
+#page {
+  width: 960px;
+  margin: 0 auto;
+  @include breakpoint(phone) { width: 90%; }
+//  @include column-count(4);
+//  @include column-rule(1px, solid, red);
+}
+
+.homepage {
+  width: 550px;
+  margin: 0 auto;
+  float: left;
+}
+.homepageAside {
+  float: right;
+  width: 330px;
+  margin-top:15px;
+  .title {
+    font-family: $merriweatherSans;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+article.mainArticle {
+  h1 {
+    font-family: $merriweatherSans;
+    padding: 0; margin: 0 0 10px;
+  }
+  p {
+    font-family: $merriweather;
+    &.date {
+      font-style: italic;
+      color: $grey;
+      margin:0;
+    }
+  }
+  padding: 25px 0;
+}
+
+
+.tweets {
+//  width: 740px;
+  margin: 0 auto;
+  // @include single-box-shadow;
+//  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  @include breakpoint(phone) {
+    width: 90%;
+  }
+  img {
+    float: left;
+    padding: 0 10px 10px 0;
+  }
+  p {
+    margin: 0;
+    &.created {
+      font-size: 12px;
+      span {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+/* =======================================================================
+Header
+========================================================================== */
+#banner {}
+#nav {
+  height: 150px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  ul {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    li {
+      display: inline;
+      margin-right: 25px;
+    }
+  }
+}
+
+/* =======================================================================
+Footer
+========================================================================== */
+#footer {}
+
+
+/* =======================================================================
+Nav
+========================================================================== */
+#nav-main {}

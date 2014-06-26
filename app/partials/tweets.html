@@ -1,0 +1,8 @@
+<!--<div class="tweets">-->
+    <!--<p>Display <input type="text" ng-model="twitterCtrl.tweetCount" ng-change="twitterCtrl.changeCount()" /> tweets from <strong>{{ twitterId }}</strong></p>-->
+<!--</div>-->
+<div class="tweets clearfix" ng-repeat="tweet in twitterCtrl.tweets" class="repeat-item">
+    <!--<img ng-src="{{ tweet.user.profile_image_url }}" />-->
+    <p>{{ tweet.text }} <span ng-repeat="url in tweet.entities.urls"><a href="{{ url.expanded_url }}">{{ url.url }}</a></span></p>
+    <p class="created"><span>Created on </span>{{ tweet.created_at }}</p>
+</div>

@@ -1,0 +1,8 @@
+<nav id="nav">
+    <ul>
+        <li ng-click="navigateSite('/')">rkrochko</li>
+        <li ng-repeat="nav in navCtrl.pullPages" ng-click="navigateSite(nav.slug)">
+            {{ nav.title }}
+        </li>
+    </ul>
+</nav>

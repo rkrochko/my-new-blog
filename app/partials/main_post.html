@@ -1,0 +1,8 @@
+<!--<p>The site currently has {{ recentPosts.posts.length }} posts</p>-->
+
+
+<article class="mainArticle" ng-repeat="post in recentPosts.posts">
+    <h1 ng-click="viewPost(post.slug)">{{ post.title }}</h1>
+    <p class="date">{{ post.date | formatWPDate }}</p>
+    <p ng-bind-html="post.excerpt"></p>
+</article>

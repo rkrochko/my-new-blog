@@ -1,0 +1,4 @@
+<section id="page" ng-show="pageCtrl.pullPage" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" ng-controller="pageController as pageCtrl">
+    <h1>Page Title: {{ pageCtrl.pullPage.title }}</h1>
+    <p ng-bind-html="pageCtrl.pullPage.content"></p>
+</section>
